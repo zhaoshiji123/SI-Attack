@@ -1,2 +1,3 @@
-# SI-Attack
+# SI-Attack: Jailbreaking Multimodal Large Language Models via Shuffle Inconsistency
+
 Jailbreaking Multimodal Large Language Models via Shuffle Inconsistency
