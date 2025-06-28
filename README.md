@@ -15,6 +15,7 @@ The entire instruction will be released soon.
 @inproceedings{Zhao2025Jailbreaking,
 title={Jailbreaking Multimodal Large Language Models via Shuffle Inconsistency},
 author={Shiji Zhao and Ranjie Duan and Fengxiang Wang and Chi Chen and Caixin Kang and Shouwei Ruan and Jialing Tao and YueFeng Chen and Hui Xue and Xingxing Wei},
+booktitle={International Conference on Computer Vision},
 year={2025},
 }
 ```
