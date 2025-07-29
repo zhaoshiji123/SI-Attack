@@ -8,7 +8,7 @@ The evaluation result on GPT-4o-05-13 can be found in [Here](https://drive.googl
 
 The core code includes the SI-Attack on MMsafetybench, you can also apply the HADES and Figstep following the original instructions. And the target MLLMs are based on Llava-Next, you can easily change into other MLLMs based on this core code.
 
-It should be mentioned that the toxic score is based on the judge prompt. The detailed implementation of using ChatGPT-3.5(Azure) is not provided.  You need to do this by yourself in function judge(prompt=""). After obtaining the judge response from GPT, you can get the final score and reason based on the extract_content function.
+It should be mentioned that the toxic score is based on the judge prompt. The detailed implementation of using ChatGPT-3.5(Azure) is not provided.  You need to do this by yourself in function judge(attack_prompt="", MLLMs_response=""). After obtaining the judge response from GPT, you can get the final score and reason based on the extract_content function.
 
 ### Citation
 
