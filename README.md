@@ -8,7 +8,13 @@ The evaluation result on GPT-4o-05-13 can be found in [Here](https://drive.googl
 
 The core code includes the SI-Attack on MMsafetybench, you can also apply the HADES and Figstep following the original instructions. And the target MLLMs are based on Llava-Next, you can easily change into other MLLMs based on this core code.
 
-For four closed-source MLLMs, we apply a system prompt: {"role": "system", "content": "You are a helpful assistant."}, and the temperature to 0, top-p to 0 as default.
+For four closed-source MLLMs, we apply a system prompt: 
+
+```bash
+{"role": "system", "content": "You are a helpful assistant."},
+```
+
+and the temperature to 0, top-p to 0 as default.
 
 It should be mentioned that the toxic score is based on the judge prompt. The detailed implementation of using ChatGPT-3.5(Azure) is not provided.  You need to do this by yourself in function judge(attack_origin_prompt="", MLLMs_response=""). attack_origin_prompt is the unshuffled harmful prompt, and the MLLMs_response are the response based on the shuffle harmful prompt. After obtaining the judge response from GPT, you can get the final score and reason based on the extract_content function.
 
